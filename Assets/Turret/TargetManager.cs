@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class TargetManager : MonoBehaviour
@@ -5,6 +6,7 @@ public class TargetManager : MonoBehaviour
     public GameObject destroyed;
     public float timer;
     public float timerCooldown;
+    public ScoreManager scoreCounter;
 
     private void Update()
     {
@@ -26,6 +28,8 @@ public class TargetManager : MonoBehaviour
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<BoxCollider>().enabled = false;
             timerCooldown = timer + 3;
+
+            scoreCounter.UpdateScore(100);
         }
     }
 }
