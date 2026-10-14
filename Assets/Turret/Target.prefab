@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7283272583433799047}
   - component: {fileID: 6571479841903116318}
   - component: {fileID: 8444419461298604903}
+  - component: {fileID: 5798187995812227732}
   m_Layer: 0
   m_Name: Target
   m_TagString: Untagged
@@ -129,3 +130,29 @@ MonoBehaviour:
   destroyed: {fileID: 6527302606294212721, guid: 98ec22974bf072d42a133be677d42b79, type: 3}
   timer: 0
   timerCooldown: 0
+  scoreCounter: {fileID: 0}
+  scoreVal: 100
+  moving: 0
+  moveSpeed: 1
+  isObstacle: 0
+--- !u!65 &5798187995812227732
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8495140932253128335}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
